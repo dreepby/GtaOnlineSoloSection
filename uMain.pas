@@ -38,9 +38,9 @@ var
 begin
   Dir := ExtractFilePath(Application.ExeName);
 
-  ShellExecute(Handle, nil, PChar(Dir + 'src\suspend.exe'), 'gta5.exe', PChar(Dir + 'src\'), SW_SHOWNORMAL);
-  Sleep(6000);
-  ShellExecute(Handle, nil, PChar(Dir + 'src\suspend.exe'), '-r gta5.exe', PChar(Dir + 'src\'), SW_SHOWNORMAL);
+  ShellExecute(Handle, nil, PChar(Dir + 'src\suspend.exe'), 'GTA5.exe', PChar(Dir + 'src\'), SW_SHOWNORMAL);
+  Sleep(10000);
+  ShellExecute(Handle, nil, PChar(Dir + 'src\suspend.exe'), '-r GTA5.exe', PChar(Dir + 'src\'), SW_SHOWNORMAL);
   Sleep(1000);
   Application.Terminate;
 end;
